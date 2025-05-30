@@ -44,3 +44,23 @@ A port can be blocked from getting accessed using command
 ```
 
 <img src="Data/Blocking_telnet.png">
+
+4. Adding rule to allow ssh port to be accessible 
+
+It can be performed using the command
+
+```
+    $ sudo ufw allow in 22
+```
+
+5. Reseting the rules to default
+
+```
+    $ sudo ufw reset
+    $ sudo ufw default deny incoming
+```
+
+Summary : the working of firewall
+```
+    -> Firewall works as filter based on rules declared to decide if the device can accessed or not by managing the iptables
+```
